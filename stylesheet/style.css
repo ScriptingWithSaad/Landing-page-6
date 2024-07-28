@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    /* font */
+
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* navbar */
+
+#main {
+    background-color: #D0D4D5;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-prt-1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-prt-1>a>img {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    width: 4rem;
+}
+
+.nav-prt-1>p>a {
+    margin: 1rem 2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-prt-1>p>a:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
+}
+
+.nav-prt-2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-prt-2>i {
+    margin: 0 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+
+/* container */
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100% - 25%); */
+}
+
+/* left container */
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 85vh;
+    width: 35vw;
+    padding: 4rem;
+}
+
+.left-container P:nth-child(1) {
+    font-size: 1rem;
+}
+
+.left-container p:nth-child(2) {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.left-container p:nth-child(3) {
+    margin: 0.2rem 0;
+}
+
+.left-container :nth-child(4) {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    padding: 0.5rem 2rem;
+    border-radius: 0 3rem 3rem 3rem;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.left-container :nth-child(4):hover {
+    transform: translate(5px);
+}
+
+
+
+/* right container */
+
+.right-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the start to ensure they appear in a single line */
+    align-items: center;
+    height: 85vh;
+    width: 65vw;
+    overflow-x: scroll;
+    /* Add horizontal scroll */
+    white-space: nowrap;
+    /* Ensure elements are in a single line */
+}
+
+.right-container::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    height: 70vh;
+    width: 25vw;
+    margin: 0 1rem;
+    border-radius: 0.6rem;
+    background-color: #F6F6F6;
+    position: relative;
+    box-shadow: 0px 0px 6px 1px grey;
+    flex-shrink: 0;
+    /* Prevent the boxes from shrinking */
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    top: -10%;
+    position: absolute;
+}
+
+.right-container .box p:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0rem;
+    text-transform: uppercase;
+}
+
+.right-container .box p:nth-child(3) {
+    position: absolute;
+    bottom: 13%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 0rem;
+}
